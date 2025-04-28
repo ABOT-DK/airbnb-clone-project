@@ -97,7 +97,83 @@ Make software **intuitive, efficient, and accessible** for all users.
 - **Letter Spacing**: -0.32px
 - **Use Case**: Captions, labels, secondary info
 
+<br/>
+<br/>
+<br/>
 
+# Project Roles and Responsibilities
+
+## Project Manager (PM) 🗂️
+**Overview**: The leader responsible for planning, executing, and closing projects.  
+**Key Responsibilities**:
+- Oversee project progress and ensure milestones are met
+- Facilitate team communication
+- Manage timelines, budget, and resources
+- Identify and mitigate risks
+- Primary stakeholder contact
+
+## Frontend Developers 💻
+**Overview**: Focus on client-side development for optimal user experience.  
+**Key Responsibilities**:
+- Implement UI/UX designs (HTML/CSS/JavaScript)
+- Develop React components with API integration
+- Ensure responsiveness across devices
+- Collaborate with designers
+- Optimize for speed and scalability
+
+## Backend Developers 🔧
+**Overview**: Handle server-side logic and data management.  
+**Key Responsibilities**:
+- Develop server-side logic (Python/Node.js/Java)
+- Design and manage databases
+- Create/maintain APIs
+- Implement security measures
+- Optimize server performance
+
+## Designers 🎨
+**Overview**: Create visually appealing and user-friendly interfaces.  
+**Key Responsibilities**:
+- Produce wireframes, mockups, and prototypes
+- Design layouts and visual elements
+- Maintain brand consistency
+- Collaborate with frontend developers
+- Conduct usability testing
+
+## QA/Testers 🧪
+**Overview**: Ensure application quality and reliability.  
+**Key Responsibilities**:
+- Develop/execute test plans
+- Perform manual/automated testing
+- Identify/document/track bugs
+- Verify fixes and regression testing
+- Ensure quality standards
+
+## DevOps Engineers 🚀
+**Overview**: Manage deployment and operational efficiency.  
+**Key Responsibilities**:
+- Automate deployment processes
+- Manage cloud infrastructure
+- Monitor performance/uptime
+- Implement CI/CD pipelines
+- Ensure production security
+
+## Product Owner (PO) 📋
+**Overview**: Define product vision and requirements.  
+**Key Responsibilities**:
+- Prioritize product features
+- Manage product backlog
+- Liaise between stakeholders and team
+- Ensure business-value delivery
+- Make scope decisions
+
+## Scrum Master 🏅
+**Overview**: Facilitate Agile/Scrum processes.  
+**Key Responsibilities**:
+- Organize Scrum ceremonies
+- Remove team impediments
+- Foster collaboration
+- Coach on Agile principles
+- Drive continuous improvement
 
 
 
