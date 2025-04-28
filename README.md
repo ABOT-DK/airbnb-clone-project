@@ -175,6 +175,75 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Coach on Agile principles
 - Drive continuous improvement
 
+<br/>
+<br/>
+<br/>
+
+# UI Component Patterns
+
+## 🧭 Navbar Component
+**Purpose**: Global navigation and user access  
+**Features**:
+- Logo/Branding (homepage link)
+- Search Bar (location/date/guests filters)
+- User Menu (login/signup → profile/dashboard)
+- "List Your Property" CTA button
+- Mobile-responsive hamburger menu
 
 
- 
+## 🏠 Property Card Component
+**Purpose**: Display rental property previews  
+**Features**:
+- Image carousel with hover zoom
+- Property details (title, location, price/night)
+- Rating system (0-5 stars)
+- Amenities badges (max 3 icons)
+- Wishlist toggle button
+- "Superhost" verification badge
+
+
+## 🦶 Footer Component
+**Purpose**: Site-wide information and links  
+**Features**:
+- Three-column layout (Discover, Hosting, Support)
+- Social media links
+- Newsletter signup form
+- Copyright/legal info
+- Mobile-optimized accordion
+
+
+## 🔍 Search Filter Component
+**Purpose**: Refine property searches  
+**Features**:
+- Price range slider
+- Amenities checklist
+- Property type dropdown
+- Instant results filtering
+- Mobile drawer implementation
+
+## 📅 Booking Modal
+**Purpose**: Handle reservation flow  
+**Features**:
+- Interactive date picker
+- Guest counter
+- Price breakdown
+- "Book Now" CTA
+- Payment method integration
+
+## 🗺️ Interactive Map
+**Purpose**: Geographic property browsing  
+**Features**:
+- Google Maps API integration
+- Cluster markers
+- Property pins with price tags
+- Viewport-aware loading
+- Fullscreen toggle
+
+## Component Relationships
+```mermaid
+graph TD
+    Navbar --> PropertyListing
+    SearchFilter --> PropertyListing
+    PropertyListing --> PropertyCard
+    PropertyCard --> BookingModal
+    Footer --> AllPages
