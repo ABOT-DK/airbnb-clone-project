@@ -1,2 +1,2 @@
 # airbnb-clone-project.
-["UI/UX DESIGN PLANNING"]
+["UI/UX Design Planning"]
