@@ -29,22 +29,22 @@ A good booking system should have a simple but lovely UI/UX that allows users to
 <br/>
 
 ### User-Friendly Design: Why It Matters  
-#### 🎯 **Purpose**  
+#### **Purpose**  
 Make software **intuitive, efficient, and accessible** for all users.  
 
-#### ✅ **Benefits**  
+#### **Benefits**  
 - **Faster adoption** – Users learn quickly.  
 - **Fewer errors** – Clear guidance = fewer mistakes.  
 - **Higher retention** – Happy users stay.  
 - **Lower support costs** – Less confusion = fewer tickets.  
 
-#### 🔑 **Key Principles**  
+#### **Key Principles**  
 1. **Simplicity** – Avoid clutter.  
 2. **Consistency** – Predictable patterns.  
 3. **Feedback** – Confirm actions (e.g., success messages).  
 4. **Accessibility** – Works for all abilities (WCAG compliance).  
 
-#### ⚡ **Example**  
+#### **Example**  
 - ❌ Bad: Hidden save button, no error hints.  
 - ✅ Good: One-click save, real-time validation.
 <br/>
@@ -61,13 +61,13 @@ Make software **intuitive, efficient, and accessible** for all users.
 
 ### Why Identify Mockup Design Properties?
 
-#### 🎯 **Core Benefits**
+#### **Core Benefits**
 - **Consistency** - Maintains uniform UI/UX across all screens
 - **Efficiency** - Speeds up development with clear specs
 - **Collaboration** - Aligns designers, devs, and stakeholders
 - **Scalability** - Enables easy future updates/theming
 
-#### 🔍 **Key Properties to Document**
+#### **Key Properties to Document**
 | Category       | Examples                      |
 |----------------|-------------------------------|
 | **Layout**     | Grids, breakpoints, containers|
@@ -109,7 +109,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 
 ## Project Roles and Responsibilities
 
-### Project Manager (PM) 🗂️
+### Project Manager (PM) 
 **Overview**: The leader responsible for planning, executing, and closing projects.  
 **Key Responsibilities**:
 - Oversee project progress and ensure milestones are met
@@ -118,7 +118,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Identify and mitigate risks
 - Primary stakeholder contact
 
-### Frontend Developers 💻
+### Frontend Developers 
 **Overview**: Focus on client-side development for optimal user experience.  
 **Key Responsibilities**:
 - Implement UI/UX designs (HTML/CSS/JavaScript)
@@ -127,7 +127,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Collaborate with designers
 - Optimize for speed and scalability
 
-### Backend Developers 🔧
+### Backend Developers 
 **Overview**: Handle server-side logic and data management.  
 **Key Responsibilities**:
 - Develop server-side logic (Python/Node.js/Java)
@@ -136,7 +136,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Implement security measures
 - Optimize server performance
 
-### Designers 🎨
+### Designers 
 **Overview**: Create visually appealing and user-friendly interfaces.  
 **Key Responsibilities**:
 - Produce wireframes, mockups, and prototypes
@@ -145,7 +145,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Collaborate with frontend developers
 - Conduct usability testing
 
-### QA/Testers 🧪
+### QA/Testers 
 **Overview**: Ensure application quality and reliability.  
 **Key Responsibilities**:
 - Develop/execute test plans
@@ -154,7 +154,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Verify fixes and regression testing
 - Ensure quality standards
 
-### DevOps Engineers 🚀
+### DevOps Engineers 
 **Overview**: Manage deployment and operational efficiency.  
 **Key Responsibilities**:
 - Automate deployment processes
@@ -163,7 +163,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Implement CI/CD pipelines
 - Ensure production security
 
-### Product Owner (PO) 📋
+### Product Owner (PO) 
 **Overview**: Define product vision and requirements.  
 **Key Responsibilities**:
 - Prioritize product features
@@ -172,7 +172,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Ensure business-value delivery
 - Make scope decisions
 
-### Scrum Master 🏅
+### Scrum Master 
 **Overview**: Facilitate Agile/Scrum processes.  
 **Key Responsibilities**:
 - Organize Scrum ceremonies
@@ -187,7 +187,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 
 ## UI Component Patterns
 
-### 🧭 Navbar Component
+### Navbar Component
 **Purpose**: Global navigation and user access  
 **Features**:
 - Logo/Branding (homepage link)
@@ -197,7 +197,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Mobile-responsive hamburger menu
 
 
-### 🏠 Property Card Component
+### Property Card Component
 **Purpose**: Display rental property previews  
 **Features**:
 - Image carousel with hover zoom
@@ -208,7 +208,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - "Superhost" verification badge
 
 
-### 🦶 Footer Component
+### Footer Component
 **Purpose**: Site-wide information and links  
 **Features**:
 - Three-column layout (Discover, Hosting, Support)
@@ -218,7 +218,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Mobile-optimized accordion
 
 
-### 🔍 Search Filter Component
+### Search Filter Component
 **Purpose**: Refine property searches  
 **Features**:
 - Price range slider
@@ -227,7 +227,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Instant results filtering
 - Mobile drawer implementation
 
-### 📅 Booking Modal
+### Booking Modal
 **Purpose**: Handle reservation flow  
 **Features**:
 - Interactive date picker
@@ -236,7 +236,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - "Book Now" CTA
 - Payment method integration
 
-### 🗺️ Interactive Map
+### Interactive Map
 **Purpose**: Geographic property browsing  
 **Features**:
 - Google Maps API integration
@@ -270,6 +270,30 @@ ___
 ## Overview
 The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments. This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
 
+## Project Goals  
+- **User Management**: Implement a secure system for user registration, authentication, and profile management.  
+- **Property Management**: Develop features for property listing creation, updates, and retrieval.  
+- **Booking System**: Create a booking mechanism for users to reserve properties and manage booking details.  
+- **Payment Processing**: Integrate a payment system to handle transactions and record payment details.  
+- **Review System**: Allow users to leave reviews and ratings for properties.  
+- **Data Optimization**: Ensure efficient data retrieval and storage through database optimizations.
+
+## Technology Stack
+
+### Backend
+- **Django**: High-level Python web framework for building the RESTful API.  
+- **Django REST Framework**: Tools for creating/managing RESTful APIs.  
+- **Celery**: Handles asynchronous tasks (notifications, payments).  
+
+### Database & Query
+- **PostgreSQL**: Powerful relational database for structured data storage.  
+- **GraphQL**: Flexible querying for efficient data retrieval.  
+- **Redis**: Caching and session management.  
+
+### DevOps & Deployment
+- **Docker**: Containerization for consistent environments.  
+- **CI/CD Pipelines**: Automated testing and deployment.  
+
 ## Team Roles
 | Role                  | Responsibilities                                                                 |
 |-----------------------|---------------------------------------------------------------------------------|
@@ -277,3 +301,34 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 | Database Administrator| Manages database design, indexing, and optimizations.                          |
 | DevOps Engineer       | Handles deployment, monitoring, and scaling of backend services.               |
 | QA Engineer           | Ensures backend functionalities are thoroughly tested and meet quality standards.|
+
+<br/>
+
+## Database Design
+### User Authentication  
+**Features**:  
+- Register new users  
+- Authenticate users  
+- Manage user profiles  
+
+### Property Management  
+**Features**:  
+- Create property listings  
+- Update property listings  
+- Retrieve property listings  
+- Delete property listings  
+
+### Booking System  
+**Features**:  
+- Make bookings  
+- Update bookings  
+- Manage bookings (including check-in/check-out details)  
+
+### Payment Processing  
+**Features**:  
+- Handle payment transactions for bookings  
+
+### Review System  
+**Features**:  
+- Post reviews for properties  
+- Manage reviews  
