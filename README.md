@@ -1,7 +1,11 @@
 # airbnb-clone-project.
-# UI/UX Design Planning
 
- ## DESIGN GOAL
+<br/>
+<br/>
+# FRONTEND
+## UI/UX Design Planning
+
+ ### DESIGN GOAL
 A good booking system should have a simple but lovely UI/UX that allows users to perform basic functionalities.
 <br/>
 <br/>
@@ -14,7 +18,7 @@ A good booking system should have a simple but lovely UI/UX that allows users to
 <br/>
 <br/>
 
-## Key features to be implemented:
+### Key features to be implemented:
 **Property Listings:** Display properties with relevant details and images.<br/>
 **Booking System:** Allow users to book properties, view booking details, and manage bookings.<br/>
 **Search Functionality:** Enable users to search for properties based on various criteria (location, price, availability).<br/>
@@ -22,29 +26,29 @@ A good booking system should have a simple but lovely UI/UX that allows users to
 <br/>
 <br/>
 
-## User-Friendly Design: Why It Matters  
-### 🎯 **Purpose**  
+### User-Friendly Design: Why It Matters  
+#### 🎯 **Purpose**  
 Make software **intuitive, efficient, and accessible** for all users.  
 
-### ✅ **Benefits**  
+#### ✅ **Benefits**  
 - **Faster adoption** – Users learn quickly.  
 - **Fewer errors** – Clear guidance = fewer mistakes.  
 - **Higher retention** – Happy users stay.  
 - **Lower support costs** – Less confusion = fewer tickets.  
 
-### 🔑 **Key Principles**  
+#### 🔑 **Key Principles**  
 1. **Simplicity** – Avoid clutter.  
 2. **Consistency** – Predictable patterns.  
 3. **Feedback** – Confirm actions (e.g., success messages).  
 4. **Accessibility** – Works for all abilities (WCAG compliance).  
 
-### ⚡ **Example**  
+#### ⚡ **Example**  
 - ❌ Bad: Hidden save button, no error hints.  
 - ✅ Good: One-click save, real-time validation.
 <br/>
 <br/>
 
-## Color Styles
+### Color Styles
 
 | Color Name   | Hex Code |
 |--------------|----------|
@@ -53,15 +57,15 @@ Make software **intuitive, efficient, and accessible** for all users.
 | Accent       | #FFA800  |  
 | Shimmer      | #E9E9E9  |  
 
-## Why Identify Mockup Design Properties?
+### Why Identify Mockup Design Properties?
 
-### 🎯 **Core Benefits**
+#### 🎯 **Core Benefits**
 - **Consistency** - Maintains uniform UI/UX across all screens
 - **Efficiency** - Speeds up development with clear specs
 - **Collaboration** - Aligns designers, devs, and stakeholders
 - **Scalability** - Enables easy future updates/theming
 
-### 🔍 **Key Properties to Document**
+#### 🔍 **Key Properties to Document**
 | Category       | Examples                      |
 |----------------|-------------------------------|
 | **Layout**     | Grids, breakpoints, containers|
@@ -74,23 +78,23 @@ Make software **intuitive, efficient, and accessible** for all users.
 <br/>
 <br/>
 
-## Typography System
+### Typography System
 
-### Heading Text
+#### Heading Text
 - **Font**: Quicksand
 - **Size**: 39px
 - **Weight**: 700 (Bold)
 - **Letter Spacing**: -0.32px
 - **Use Case**: Main headings, hero text
 
-### Body Text
+#### Body Text
 - **Font**: Quicksand
 - **Size**: 18px
 - **Weight**: 500 (Medium)
 - **Letter Spacing**: -0.32px
 - **Use Case**: Paragraphs, main content
 
-### Small Text
+#### Small Text
 - **Font**: Quicksand
 - **Size**: 10-14px (Responsive)
 - **Weight**: 500 (Medium)
@@ -101,9 +105,9 @@ Make software **intuitive, efficient, and accessible** for all users.
 <br/>
 <br/>
 
-# Project Roles and Responsibilities
+## Project Roles and Responsibilities
 
-## Project Manager (PM) 🗂️
+### Project Manager (PM) 🗂️
 **Overview**: The leader responsible for planning, executing, and closing projects.  
 **Key Responsibilities**:
 - Oversee project progress and ensure milestones are met
@@ -112,7 +116,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Identify and mitigate risks
 - Primary stakeholder contact
 
-## Frontend Developers 💻
+### Frontend Developers 💻
 **Overview**: Focus on client-side development for optimal user experience.  
 **Key Responsibilities**:
 - Implement UI/UX designs (HTML/CSS/JavaScript)
@@ -121,7 +125,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Collaborate with designers
 - Optimize for speed and scalability
 
-## Backend Developers 🔧
+### Backend Developers 🔧
 **Overview**: Handle server-side logic and data management.  
 **Key Responsibilities**:
 - Develop server-side logic (Python/Node.js/Java)
@@ -130,7 +134,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Implement security measures
 - Optimize server performance
 
-## Designers 🎨
+### Designers 🎨
 **Overview**: Create visually appealing and user-friendly interfaces.  
 **Key Responsibilities**:
 - Produce wireframes, mockups, and prototypes
@@ -139,7 +143,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Collaborate with frontend developers
 - Conduct usability testing
 
-## QA/Testers 🧪
+### QA/Testers 🧪
 **Overview**: Ensure application quality and reliability.  
 **Key Responsibilities**:
 - Develop/execute test plans
@@ -148,7 +152,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Verify fixes and regression testing
 - Ensure quality standards
 
-## DevOps Engineers 🚀
+### DevOps Engineers 🚀
 **Overview**: Manage deployment and operational efficiency.  
 **Key Responsibilities**:
 - Automate deployment processes
@@ -157,7 +161,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Implement CI/CD pipelines
 - Ensure production security
 
-## Product Owner (PO) 📋
+### Product Owner (PO) 📋
 **Overview**: Define product vision and requirements.  
 **Key Responsibilities**:
 - Prioritize product features
@@ -166,7 +170,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Ensure business-value delivery
 - Make scope decisions
 
-## Scrum Master 🏅
+### Scrum Master 🏅
 **Overview**: Facilitate Agile/Scrum processes.  
 **Key Responsibilities**:
 - Organize Scrum ceremonies
@@ -179,9 +183,9 @@ Make software **intuitive, efficient, and accessible** for all users.
 <br/>
 <br/>
 
-# UI Component Patterns
+## UI Component Patterns
 
-## 🧭 Navbar Component
+### 🧭 Navbar Component
 **Purpose**: Global navigation and user access  
 **Features**:
 - Logo/Branding (homepage link)
@@ -191,7 +195,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Mobile-responsive hamburger menu
 
 
-## 🏠 Property Card Component
+### 🏠 Property Card Component
 **Purpose**: Display rental property previews  
 **Features**:
 - Image carousel with hover zoom
@@ -202,7 +206,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - "Superhost" verification badge
 
 
-## 🦶 Footer Component
+### 🦶 Footer Component
 **Purpose**: Site-wide information and links  
 **Features**:
 - Three-column layout (Discover, Hosting, Support)
@@ -212,7 +216,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Mobile-optimized accordion
 
 
-## 🔍 Search Filter Component
+### 🔍 Search Filter Component
 **Purpose**: Refine property searches  
 **Features**:
 - Price range slider
@@ -221,7 +225,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Instant results filtering
 - Mobile drawer implementation
 
-## 📅 Booking Modal
+### 📅 Booking Modal
 **Purpose**: Handle reservation flow  
 **Features**:
 - Interactive date picker
@@ -230,7 +234,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - "Book Now" CTA
 - Payment method integration
 
-## 🗺️ Interactive Map
+### 🗺️ Interactive Map
 **Purpose**: Geographic property browsing  
 **Features**:
 - Google Maps API integration
@@ -239,7 +243,7 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Viewport-aware loading
 - Fullscreen toggle
 
-## Component Relationships
+### Component Relationships
 ```mermaid
 graph TD
     Navbar --> PropertyListing
