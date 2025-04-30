@@ -2,7 +2,10 @@
 
 <br/>
 <br/>
+
 # FRONTEND
+<br/>
+
 ## UI/UX Design Planning
 
  ### DESIGN GOAL
