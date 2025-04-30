@@ -50,6 +50,8 @@ Make software **intuitive, efficient, and accessible** for all users.
 <br/>
 <br/>
 
+---
+
 ### Color Styles
 
 | Color Name   | Hex Code |
@@ -59,6 +61,10 @@ Make software **intuitive, efficient, and accessible** for all users.
 | Accent       | #FFA800  |  
 | Shimmer      | #E9E9E9  |  
 
+---
+<br/>
+
+
 ### Why Identify Mockup Design Properties?
 
 #### **Core Benefits**
@@ -66,6 +72,8 @@ Make software **intuitive, efficient, and accessible** for all users.
 - **Efficiency** - Speeds up development with clear specs
 - **Collaboration** - Aligns designers, devs, and stakeholders
 - **Scalability** - Enables easy future updates/theming
+
+---
 
 #### **Key Properties to Document**
 | Category       | Examples                      |
@@ -76,7 +84,9 @@ Make software **intuitive, efficient, and accessible** for all users.
 | **Spacing**    | Padding, margins, gutters     |
 | **Components** | Buttons, inputs, states       |
 | **Interactions**| Animations, transitions      |
-> "Good documentation turns mockups into living design systems."
+
+---
+
 <br/>
 <br/>
 
@@ -245,6 +255,8 @@ Make software **intuitive, efficient, and accessible** for all users.
 - Viewport-aware loading
 - Fullscreen toggle
 
+---
+
 ### Component Relationships
 ```mermaid
 graph TD
@@ -255,8 +267,8 @@ graph TD
     Footer --> AllPages
 ```
 
+---
 
-___
 
 <br/>
 <br/>
@@ -270,6 +282,9 @@ ___
 ## Overview
 The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments. This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
 
+<br/>
+<br/>
+
 ## Project Goals  
 - **User Management**: Implement a secure system for user registration, authentication, and profile management.  
 - **Property Management**: Develop features for property listing creation, updates, and retrieval.  
@@ -277,6 +292,9 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 - **Payment Processing**: Integrate a payment system to handle transactions and record payment details.  
 - **Review System**: Allow users to leave reviews and ratings for properties.  
 - **Data Optimization**: Ensure efficient data retrieval and storage through database optimizations.
+
+<br/>
+<br/>
 
 ## Technology Stack
 
@@ -292,7 +310,12 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 
 ### DevOps & Deployment
 - **Docker**: Containerization for consistent environments.  
-- **CI/CD Pipelines**: Automated testing and deployment.  
+- **CI/CD Pipelines**: Automated testing and deployment.
+
+<br/>
+<br/>
+
+---
 
 ## Team Roles
 | Role                  | Responsibilities                                                                 |
@@ -302,9 +325,92 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 | DevOps Engineer       | Handles deployment, monitoring, and scaling of backend services.               |
 | QA Engineer           | Ensures backend functionalities are thoroughly tested and meet quality standards.|
 
+---
+
+<br/>
 <br/>
 
 ## Database Design
+
+### Key Entities
+
+#### 1. Users
+- **Fields**:  
+  - `id` (Primary Key)  
+  - `username`  
+  - `email` (Unique)  
+  - `password_hash`  
+  - `role` (e.g., guest, host, admin)  
+- **Relationships**:  
+  - A user can **own multiple properties** (One-to-Many).  
+  - A user can **make multiple bookings** (One-to-Many).  
+  - A user can **write multiple reviews** (One-to-Many).  
+
+#### 2. Properties
+- **Fields**:  
+  - `id` (Primary Key)  
+  - `title`  
+  - `description`  
+  - `price_per_night`  
+  - `owner_id` (Foreign Key → Users)  
+- **Relationships**:  
+  - A property **belongs to one user** (owner) (Many-to-One).  
+  - A property can **have multiple bookings** (One-to-Many).  
+  - A property can **have multiple reviews** (One-to-Many).  
+
+#### 3. Bookings
+- **Fields**:  
+  - `id` (Primary Key)  
+  - `check_in_date`  
+  - `check_out_date`  
+  - `total_price`  
+  - `guest_id` (Foreign Key → Users)  
+  - `property_id` (Foreign Key → Properties)  
+- **Relationships**:  
+  - A booking **belongs to one user** (guest) (Many-to-One).  
+  - A booking **belongs to one property** (Many-to-One).  
+  - A booking can **have one payment** (One-to-One).  
+
+#### 4. Reviews
+- **Fields**:  
+  - `id` (Primary Key)  
+  - `rating` (e.g., 1-5 stars)  
+  - `comment`  
+  - `user_id` (Foreign Key → Users)  
+  - `property_id` (Foreign Key → Properties)  
+- **Relationships**:  
+  - A review **belongs to one user** (Many-to-One).  
+  - A review **belongs to one property** (Many-to-One).  
+
+#### 5. Payments
+- **Fields**:  
+  - `id` (Primary Key)  
+  - `amount`  
+  - `status` (e.g., pending, completed, failed)  
+  - `booking_id` (Foreign Key → Bookings)  
+  - `payment_method`  
+- **Relationships**:  
+  - A payment **belongs to one booking** (One-to-One).  
+
+---
+
+### Entity Relationship Diagram (Conceptual)
+```mermaid
+
+erDiagram
+    USERS ||--o{ PROPERTIES : "owns"
+    USERS ||--o{ BOOKINGS : "makes"
+    USERS ||--o{ REVIEWS : "writes"
+    PROPERTIES ||--o{ BOOKINGS : "has"
+    PROPERTIES ||--o{ REVIEWS : "has"
+    BOOKINGS ||--|| PAYMENTS : "has"
+```
+---
+
+<br/>
+<br/>
+
+## Feature Breakdown
 ### User Authentication  
 **Features**:  
 - Register new users  
@@ -331,4 +437,78 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 ### Review System  
 **Features**:  
 - Post reviews for properties  
-- Manage reviews  
+- Manage reviews
+
+<br/>
+<br/>
+
+## API Security
+
+### Key Security Measures
+
+#### 1. Authentication
+- **JWT (JSON Web Tokens)** for stateless user authentication.
+- **OAuth 2.0** for third-party login (e.g., Google, Facebook).
+- **Password hashing** (bcrypt/scrypt) with salt for stored credentials.
+
+#### 2. Authorization
+- **Role-Based Access Control (RBAC)** to restrict actions (e.g., only hosts can edit properties).
+- **Resource ownership checks** (e.g., users can only delete their own reviews).
+
+#### 3. Rate Limiting
+- **Throttling** (e.g., 100 requests/minute per IP) to prevent brute force/DDoS attacks.
+- **API key rotation** for third-party integrations.
+
+#### 4. Data Protection
+- **HTTPS/TLS** encryption for all communications.
+- **Sensitive data masking** (e.g., partial credit card display).
+
+#### 5. Payment Security
+- **PCI-DSS compliance** via Stripe/PayPal integration (no raw payment data storage).
+- **Double verification** for booking transactions.
+
+---
+
+### Why Security Matters
+
+| Area               | Risks Mitigated                          | Security Importance                                                                 |
+|--------------------|------------------------------------------|------------------------------------------------------------------------------------|
+| **User Data**      | Identity theft, spam                     | Protects personal info (emails, passwords) and prevents account takeovers.         |
+| **Payments**       | Fraud, chargebacks                       | Ensures financial transactions are irreversible and tamper-proof.                   |
+| **Properties**     | Unauthorized edits, fake listings        | Maintains platform integrity and host trust.                                        |
+| **Reviews**        | Fake reviews, spam                       | Preserves review authenticity and user confidence.                                  |
+| **API Infrastructure** | DDoS, resource exhaustion           | Guarantees service availability and performance under load.                         |
+
+---
+
+<br/>
+<br/>
+
+## CI/CD Pipeline
+
+### What is CI/CD?
+**CI/CD** (Continuous Integration and Continuous Deployment) is a development practice that automates the process of integrating code changes, testing, and deploying applications.  
+- **Continuous Integration (CI)**: Automatically builds and tests every code change pushed to the repository.  
+- **Continuous Deployment (CD)**: Automatically deploys validated changes to production/staging environments.  
+
+### Why It Matters for This Project
+1. **Faster Releases**: Automates repetitive tasks, reducing manual errors and speeding up delivery.  
+2. **Early Bug Detection**: Catches issues in development/testing stages before they reach production.  
+3. **Consistency**: Ensures every change is tested and deployed in a standardized way.  
+4. **Scalability**: Simplifies managing deployments as the project grows.  
+
+### Tools & Workflow
+#### Core Tools:
+- **GitHub Actions** (CI/CD automation)  
+- **Docker** (Containerization for consistent environments)  
+- **PostgreSQL** (Database testing)  
+- **Pytest** (Python test automation)  
+
+#### Pipeline Stages:
+1. **Code Push**: Triggers the pipeline on `git push` to `main` or feature branches.  
+2. **Build**: Creates Docker images for the application.  
+3. **Test**: Runs unit/integration tests with Pytest.  
+4. **Deploy**:  
+   - **Staging**: Auto-deploys to a test environment on successful builds.  
+   - **Production**: Manual approval for production deployments.  
+
