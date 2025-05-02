@@ -11,6 +11,7 @@
 A good booking system should have a simple but lovely UI/UX that allows users to perform basic functionalities.
 <br/>
 <br/>
+
 ## Pages	Description	UI
 **Page-1** This is the main interface of the AirBnB clone. It shows a clean and modern layout with various property listings displayed, each with a title, price, and a brief description. The design focuses on user-friendly navigation and visual appeal.
 
@@ -510,5 +511,9 @@ erDiagram
 3. **Test**: Runs unit/integration tests with Pytest.  
 4. **Deploy**:  
    - **Staging**: Auto-deploys to a test environment on successful builds.  
-   - **Production**: Manual approval for production deployments.  
+   - **Production**: Manual approval for production deployments.
+  
+> "Documentation is a love letter that you write to your future self." - Damian Conway
+
+
 
