@@ -513,7 +513,7 @@ erDiagram
    - **Staging**: Auto-deploys to a test environment on successful builds.  
    - **Production**: Manual approval for production deployments.
   
-> "Documentation is a love letter that you write to your future self." - Damian Conway
+> " _Documentation is a love letter that you write to your future self._ " - Damian Conway
 
 
 
